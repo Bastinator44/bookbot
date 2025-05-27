@@ -2,10 +2,11 @@ from stats import *
 import sys
 
 def get_file ():
-    if len(sys.argv) == 1:
+    if len(sys.argv) == 2:
         print(sys.argv[1])
         return(sys.argv[1])
     else:
+        sys.stdout.write("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
 
 def get_book_text (file):
