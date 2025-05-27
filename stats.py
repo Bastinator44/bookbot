@@ -1,6 +1,5 @@
 def get_num_words (text):
     num_words = len(text.split())
-    print(f"{num_words} words found in the document")
     return(num_words)
 
 def character_count(text):
@@ -12,4 +11,8 @@ def character_count(text):
                 char_counts[char] += 1
             else:
                 char_counts[char] = 1
-    print(char_counts)
+    return(sorted_dict(char_counts))
+
+def sorted_dict(d):
+    items = sorted(d.items(), key=lambda item: item[1], reverse=True)
+    return (dict(items))
