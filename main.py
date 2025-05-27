@@ -1,6 +1,6 @@
 from stats import *
 import sys
-
+ 
 def get_file ():
     if len(sys.argv) == 2:
         print(sys.argv[1])
