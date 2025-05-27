@@ -1,4 +1,5 @@
-import stats
+from stats import *
+
 
 def get_book_text (file):
     with open(file, "r") as f:
@@ -7,6 +8,7 @@ def get_book_text (file):
 
 def main ():
     text = get_book_text("./books/frankenstein.txt")
-    stats.get_num_words(text)
+    get_num_words(text)
+    character_count(text)
     
 main()
