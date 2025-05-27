@@ -7,6 +7,6 @@ def get_book_text (file):
 
 def main ():
     text = get_book_text("./books/frankenstein.txt")
-    get_num_words(text)
-
+    stats.get_num_words(text)
+    
 main()
